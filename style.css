@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(202, 255, 200);
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    max-width: 450px;
+    width: 100%;
+    padding: 24px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.button__container {
+    margin-top: 20px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+.button__name {
+    font-size: 20px;
+}
+.btn {
+    padding: 12px 24px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    color: #333;
+    outline: 0;
+    transition: 0.2s;
+}
+.btn-dashed:hover {
+    border: 2px dashed #333;
+}
+.btn-rounded:hover {
+    border-radius: 16px;
+}
+.btn-fill {
+    transition: 0.2s ease-in-out !important;
+}
+.btn-fill:hover {
+    color: #fff;
+    box-shadow: 0 0 50px #333 inset, 0 0 10px #333;
+}
+.btn-shadow {
+    background: #333; color: #fff;
+}
+.btn-shadow:hover {
+    box-shadow: 0 4px 8px rgba(236, 51, 18, 0.781);
+}
+.btn-press {
+    position: relative; top: 0;
+    background: #333; color: #fff;
+    box-shadow: 0 6px rgb(255, 190, 186);
+    transition: 0.05s !important;
+}
+.btn-press:hover {
+    top: 3px;
+    box-shadow: 0 3px rgb(255, 93, 78);
+}
+.btn-press:active {
+    top: 6px;
+    box-shadow: 0 0 rgb(255, 38, 0);
+}
